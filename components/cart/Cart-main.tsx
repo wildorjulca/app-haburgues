@@ -1,9 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
 import cartBurguer from '../../public/images/cart-burger.png'
-import { Clock5, CupSoda, CupSodaIcon, Flame } from 'lucide-react'
+import { Clock5, CupSoda, CupSodaIcon, Flame, Minus, Plus } from 'lucide-react'
 import CartHeader from './cart-header'
+import { Badge } from "@/components/ui/badge"
 
+
+import cutlet from '../../public/images/burguer/sm/cutlet.png'
+import mayo from '../../public/images/burguer/sm/mayo (1).png'
+
+import CartIngredient from './cart-ingredient'
 const Cartmain = () => {
   return (
     <>
@@ -32,6 +38,30 @@ const Cartmain = () => {
           className="stroke-red-500 bg-red-500 rounded-full" />
 
       </section>
+      <button className='w-full bg-rose-50 rounded-2xl p-2'>
+        <span className='text-rose-500'>+ Tomate Chechout</span>
+        <Badge className='ml-2 bg-rose-600'>0.2 oz</Badge>
+      </button>
+
+
+
+      <div className='grid grid-cols-2 gap-5 mt-4'>
+        <CartIngredient
+          src={cutlet}
+          alt='Cultet'
+          title='Cutlet'
+        />
+        <CartIngredient
+          src={mayo}
+          alt='Cultet'
+          title= "Mayo"
+        />
+
+      </div>
+
+
+
+
     </>
   )
 }
