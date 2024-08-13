@@ -56,8 +56,12 @@ const Cartmain = () => {
           alt='Cultet'
           title= "Mayo"
         />
-
       </div>
+
+      <section className='mt-4'>
+        <p className='text-center text-blue-700 text-4xl font-extrabold'>$12.65</p>
+        <button className='w-full bg-blue-700 text-white  rounded-full h-[45px] mt-2 hover:bg-blue-500'>Chechout</button>
+      </section>
 
 
 

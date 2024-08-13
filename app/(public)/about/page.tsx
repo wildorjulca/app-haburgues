@@ -5,9 +5,7 @@ import React from 'react'
 const HomePage = () => {
     return (
         <div>
-          <Hero_main />
-          <Cartmain />
-
+<h1>about</h1>
         </div>
     )
 }
